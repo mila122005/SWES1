@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: swes-app
+    runtime: node
+    buildCommand: npm run build && cd backend && npm install
+    startCommand: npm start
+    envVars:
+      - key: PORT
+        value: 8000
+      - key: FIREBASE_API_KEY
+        sync: false
+      - key: NODE_ENV
+        value: production

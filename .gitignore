@@ -1,0 +1,20 @@
+# Dependencias
+node_modules/
+frontend/node_modules/
+backend/node_modules/
+
+# Build del frontend
+frontend/dist/
+
+# Variables de entorno (¡NUNCA subir!)
+.env
+backend/.env
+frontend/.env
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
